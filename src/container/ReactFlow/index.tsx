@@ -1,6 +1,5 @@
 import cc from 'classcat';
 import React, { forwardRef } from 'react';
-import Attribution from '../../components/Attribution';
 import { BezierEdge, SmoothStepEdge, StepEdge, StraightEdge, SimpleBezierEdge } from '../../components/Edges';
 import DefaultNode from '../../components/Nodes/DefaultNode';
 import InputNode from '../../components/Nodes/InputNode';
@@ -132,7 +131,6 @@ const ReactFlow = forwardRef<ReactFlowRefType, ReactFlowProps>(
       fitView = false,
       fitViewOptions,
       connectOnClick = true,
-      attributionPosition,
       proOptions,
       defaultEdgeOptions,
       ...rest
@@ -233,7 +231,6 @@ const ReactFlow = forwardRef<ReactFlowRefType, ReactFlowProps>(
           />
           {onSelectionChange && <SelectionListener onSelectionChange={onSelectionChange} />}
           {children}
-          <Attribution proOptions={proOptions} position={attributionPosition} />
         </Wrapper>
       </div>
     );

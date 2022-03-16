@@ -196,7 +196,6 @@ const OverviewFlow = () => {
       onEdgeDoubleClick={onEdgeDoubleClick}
       fitView
       fitViewOptions={{ padding: 0.2 }}
-      attributionPosition="top-right"
       maxZoom={Infinity}
       onNodesDelete={onNodesDelete}
       onEdgesDelete={onEdgesDelete}

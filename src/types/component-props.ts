@@ -19,7 +19,6 @@ import {
   OnEdgeUpdateFunc,
   OnInit,
   ProOptions,
-  AttributionPosition,
   DefaultEdgeOptions,
   FitViewOptions,
   BackgroundVariant,
@@ -115,7 +114,6 @@ export interface ReactFlowProps extends HTMLAttributes<HTMLDivElement> {
   fitView?: boolean;
   fitViewOptions?: FitViewOptions;
   connectOnClick?: boolean;
-  attributionPosition?: AttributionPosition;
   proOptions?: ProOptions;
 }
 
